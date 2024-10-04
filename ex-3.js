@@ -6,19 +6,33 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+function findTopBreed(breedArray) {
+  const dogFrequency = {};
+
+  for (let breed of breedArray) {
+    if (dogFrequency[breed]) {
+      dogFrequency[breed]++;
+    } else {
+      dogFrequency[breed] = 1;
+    }
+  }
+
+  return dogFrequency;
+}
+
 const breedArray1 = [
-    "Beagle",
-    "Labrador Retriever",
-    "Golden Retriever",
-    "Bulldog",
-    "Golden Retriever",
-    "Poodle",
-    "Beagle",
-    "Beagle",
-  ];
-  
-  console.log(findTopBreed(breedArray1));
-  /* 
+  "Beagle",
+  "Labrador Retriever",
+  "Golden Retriever",
+  "Bulldog",
+  "Golden Retriever",
+  "Poodle",
+  "Beagle",
+  "Beagle",
+];
+
+console.log(findTopBreed(breedArray1));
+/* 
           {
             Beagle: 3,
             "Labrador Retriever": 1,
@@ -27,17 +41,17 @@ const breedArray1 = [
             Poodle: 1
           }
   */
-  
-  const breedArray2 = [
-    "German Shepherd",
-    "Siberian Husky",
-    "Dachshund",
-    "Siberian Husky",
-    "Shih Tzu",
-  ];
-  
-  console.log(findTopBreed(breedArray2));
-  /*
+
+const breedArray2 = [
+  "German Shepherd",
+  "Siberian Husky",
+  "Dachshund",
+  "Siberian Husky",
+  "Shih Tzu",
+];
+
+console.log(findTopBreed(breedArray2));
+/*
           {
             "German Shepherd": 1,
             "Siberian Husky": 2,
@@ -45,12 +59,11 @@ const breedArray1 = [
             "Shih Tzu": 1
           }
   */
-  
-  // ถ้าเราพยายามเข้าถึง Key ที่ยังไม่มีอยู่ใน Object จะได้ค่ากลับมาเป็น undefined เช่น
-  const dogFrequency = {
-    "German Shepherd": 10,
-  };
-  
-  console.log(dogFrequency["German Shepherd"]); // 10
-  console.log(dogFrequency["Shih Tzu"]); // undefined
-  
+
+// ถ้าเราพยายามเข้าถึง Key ที่ยังไม่มีอยู่ใน Object จะได้ค่ากลับมาเป็น undefined เช่น
+const dogFrequency = {
+  "German Shepherd": 10,
+};
+
+console.log(dogFrequency["German Shepherd"]); // 10
+console.log(dogFrequency["Shih Tzu"]); // undefined

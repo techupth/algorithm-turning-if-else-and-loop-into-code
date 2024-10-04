@@ -8,6 +8,27 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+function calculateAverageScore(scores, classNumber, targetSubject) {
+  let totalScore = 0;
+  let studentCount = 0;
+
+  for (let student of scores) {
+    let studentClassNo = student["classNumber"];
+    let studentTargetSubjectScore = student["subject"][targetSubject];
+    // console.log(studentTargetSubjectScore)
+
+    if (
+      studentClassNo === classNumber &&
+      studentTargetSubjectScore !== undefined
+    ) {
+      totalScore += studentTargetSubjectScore;
+      studentCount += 1;
+    }
+  }
+
+  return totalScore / studentCount;
+}
+
 const scores = [
   {
     firstname: "Bob",

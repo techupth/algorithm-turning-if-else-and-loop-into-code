@@ -5,6 +5,28 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง        
 */
 
+function countNumbers(numbers) {
+  let numberOfPositive = 0;
+  let numberOfNegative = 0;
+  let numberOfZero = 0;
+
+  for (let number of numbers) {
+    if (number > 0) {
+      numberOfPositive++;
+    } else if (number < 0) {
+      numberOfNegative++;
+    } else {
+      numberOfZero++;
+    }
+  }
+
+  return {
+    positive: numberOfPositive,
+    negative: numberOfNegative,
+    zero: numberOfZero,
+  };
+}
+
 const numbers1 = [3, -5, 0, 12, -7, 0, 8, 0, 1];
 console.log(countNumbers(numbers1)); // { positive: 4, negative: 2, zero: 3 }
 

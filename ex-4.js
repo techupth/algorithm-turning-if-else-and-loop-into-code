@@ -7,6 +7,20 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+function calculateAverageScore(scores, classNumber) {
+  let totalScore = 0;
+  let studentCount = 0;
+
+  for (let student of scores) {
+    if (student["classNumber"] === classNumber) {
+      totalScore += student["mathScore"];
+      studentCount += 1;
+    }
+  }
+
+  return totalScore / studentCount;
+}
+
 const scores = [
   { firstname: "Isabel", lastname: "Moore", classNumber: 3, mathScore: 78 },
   { firstname: "Alice", lastname: "Clark", classNumber: 1, mathScore: 80 },
