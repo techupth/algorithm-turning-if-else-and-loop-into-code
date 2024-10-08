@@ -5,6 +5,16 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+function sumPositiveNumbers(numbers1) {
+  let totalsum = 0;
+  for (let i = 0; i < numbers1.length; i++) {
+    if (numbers1[i] > 0) {
+      totalsum = totalsum + numbers1[i];
+    }
+  }
+  return totalsum;
+}
+
 const numbers1 = [3, -5, 10, 12, -7, 0, 8, 2];
 console.log(sumPositiveNumbers(numbers1)); // 35
 

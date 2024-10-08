@@ -5,6 +5,25 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง        
 */
 
+function countNumbers(number) {
+  let totalNumbers = { positive: 0, negative: 0, zero: 0 };
+  /*
+  
+  */
+
+  for (let i = 0; i < number.length; i++) {
+    if (number[i] > 0) {
+      totalNumbers.positive += 1; // ถ้ามากกว่า 0 เก็บ positive
+    } else if (number[i] < 0) {
+      totalNumbers.negative += 1; // ถ้าน้อยกว่า 0 เก็บ negative
+    } else {
+      totalNumbers.zero += 1; // ถ้าไม่ตรงเงื่อนไข (ก็คือเท่ากับ 0) เก็บ zero
+    }
+  }
+
+  return totalNumbers; // คืนค่าผลลัพธ์
+}
+
 const numbers1 = [3, -5, 0, 12, -7, 0, 8, 0, 1];
 console.log(countNumbers(numbers1)); // { positive: 4, negative: 2, zero: 3 }
 
