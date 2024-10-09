@@ -7,6 +7,8 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+// Start coding here
+
 function calculateAverageScore(scores, classNumber) {
   let totalScore = 0;
   let studentCount = 0;

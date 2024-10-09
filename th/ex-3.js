@@ -6,6 +6,8 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+// Start coding here
+
 function findTopBreed(breedArray) {
   const dogFrequency = {};
 
