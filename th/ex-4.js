@@ -7,6 +7,8 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง
 */
 
+// Start coding here
+
 const scores = [
   { firstname: "Isabel", lastname: "Moore", classNumber: 3, mathScore: 78 },
   { firstname: "Alice", lastname: "Clark", classNumber: 1, mathScore: 80 },

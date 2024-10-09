@@ -5,6 +5,8 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ในโค้ดด้านล่าง        
 */
 
+// Start coding here
+
 const numbers1 = [3, -5, 0, 12, -7, 0, 8, 0, 1];
 console.log(countNumbers(numbers1)); // { positive: 4, negative: 2, zero: 3 }
 
