@@ -8,7 +8,7 @@
 
 // Start coding here
 
-function findTopBreed(breedArray) {
+function countDogByBreed(breedArray) {
   const dogFrequency = {};
 
   for (let breed of breedArray) {
@@ -33,7 +33,7 @@ const breedArray1 = [
   "Beagle",
 ];
 
-console.log(findTopBreed(breedArray1));
+console.log(countDogByBreed(breedArray1));
 /* 
           {
             Beagle: 3,
@@ -52,7 +52,7 @@ const breedArray2 = [
   "Shih Tzu",
 ];
 
-console.log(findTopBreed(breedArray2));
+console.log(countDogByBreed(breedArray2));
 /*
           {
             "German Shepherd": 1,
