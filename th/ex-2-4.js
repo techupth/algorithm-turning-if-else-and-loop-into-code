@@ -8,4 +8,12 @@ const numbers = [12, 45, 7, 89, 23];
 
 // Start coding here
 
+let maxValue = numbers[0];
+
+for (let number of numbers) {
+  if (number > maxValue) {
+    maxValue = number;
+  }
+}
+
 console.log(maxValue); // 89

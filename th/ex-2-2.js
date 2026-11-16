@@ -7,3 +7,9 @@
 const ages = [25, 32, 17, 40, 15];
 
 // Start coding here
+
+for (let age of ages) {
+  if (age < 18) {
+    console.log("พบคนอายุน้อยกว่า 18");
+  }
+}

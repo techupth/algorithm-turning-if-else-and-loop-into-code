@@ -11,3 +11,9 @@ const age = 68;
 const annualIncome = 170000;
 
 // Start coding here
+
+if (age > 65 && annualIncome < 190000) {
+  console.log("คุณได้รับการยกเว้นภาษี");
+} else {
+  console.log("คุณต้องเสียภาษี");
+}
