@@ -8,6 +8,19 @@
 
 // Start coding here
 
+// กระบวนการ:
+// - การกำหนดค่า
+// - การบวก/ลบ/คูณ/หาร
+// - If-Else
+// - Loop
+// ขั้นตอน:
+// 1. Declare ตัว Variable dogFrequency เพื่อเก็บความถี่ที่พบสุนัขแต่ละสายพันธุ์
+// 2. Loop ผ่านสมาชิกแต่ละตัวใน breedArray
+//    <ในการวนแต่ละครั้ง ให้ใช้ If-Else
+//       <ถ้าเข้าถึง Key breed แล้วพบว่าไม่ใช่ undefined ให้เพิ่มค่าของ Key นั้นอีก 1>
+//       <ถ้าไม่เป็นไปตามเงื่อนไขข้างต้น ให้กำหนดค่าของ Key breed เท่ากับ 1>>
+// 3. กรณีวนลูปจนครบแล้วให้ทำการ Return ค่า dogFrequency
+
 function countDogByBreed(breedArray) {
   const dogFrequency = {};
 

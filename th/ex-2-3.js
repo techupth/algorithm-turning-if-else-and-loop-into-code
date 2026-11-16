@@ -7,6 +7,21 @@
 
 // Start coding here
 
+// กระบวนการ:
+// - การกำหนดค่า
+// - การบวก/ลบ/คูณ/หาร
+// - การเปรียบเทียบ
+// - If-Else
+// - Loop
+// ขั้นตอน:
+// 1. Declare ตัว Variable numberOfPositive, numberOfNegative, numberOfZero เพื่อเก็บจำนวนเลขบวก ลบ และศูนย์
+// 2. Loop ผ่านสมาชิกแต่ละตัวใน numbers
+//    <ในการวนแต่ละครั้ง ให้ใช้ If-Else
+//       <ถ้าสมาชิกตัวนั้น มากกว่า 0 ให้บวก numberOfPositive ด้วย 1>
+//       <ถ้าไม่เป็นไปตามเงื่อนไขข้างต้น แต่สมาชิกตัวนั้น น้อยกว่า 0 ให้บวก numberOfNegative ด้วย 1>
+//       <ถ้าไม่เป็นไปตามเงื่อนไขทั้งหมดข้างต้น ให้บวก numberOfZero ด้วย 1>>
+// 3. กรณีวนลูปจนครบแล้วให้ Return Object { positive: numberOfPositive, negative: numberOfNegative, zero: numberOfZero }
+
 function countNumbers(numbers) {
   let numberOfPositive = 0;
   let numberOfNegative = 0;

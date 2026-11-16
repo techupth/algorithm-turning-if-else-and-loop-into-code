@@ -9,6 +9,22 @@
 
 // Start coding here
 
+// กระบวนการ:
+// - การกำหนดค่า
+// - การบวก/ลบ/คูณ/หาร
+// - การเปรียบเทียบ
+// - If-Else
+// - Loop
+// ขั้นตอน:
+// 1. Declare ตัว Variable totalScore เพื่อเก็บผลรวมของคะแนนสอบ
+// 2. Declare ตัว Variable studentCount เพื่อเก็บจำนวนนักเรียนที่อยู่ห้องที่ระบุ
+// 3. Loop ผ่านสมาชิกแต่ละตัวใน scores
+//    <ในการวนแต่ละครั้ง ให้ใช้ If-Else
+//       <ถ้า Value ของ Key classNumber เท่ากับ classNumber ให้
+//          (1) นำ Value ของ Key mathScore มาบวก totalScore
+//          (2) นำ studentCount มาบวก 1>>
+// 4. กรณีวนลูปจนครบแล้วให้ทำการ Return ค่า totalScore / studentCount
+
 function calculateAverageScore(scores, classNumber) {
   let totalScore = 0;
   let studentCount = 0;
