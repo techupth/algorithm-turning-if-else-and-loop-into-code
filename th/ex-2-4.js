@@ -8,12 +8,12 @@ const numbers = [12, 45, 7, 89, 23];
 
 // Start coding here
 
-// กระบวนการ:
+// Operation:
 // - การกำหนดค่า
 // - การเปรียบเทียบ
 // - If-Else
 // - Loop
-// ขั้นตอน:
+// เรียงลำดับกระบวนการ:
 // 1. Declare ตัว Variable maxValue และ Assign ค่าให้เท่ากับสมาชิกตัวแรกใน numbers
 // 2. Loop ผ่านสมาชิกแต่ละตัวใน numbers
 //    <ในการวนแต่ละครั้ง ให้ใช้ If-Else

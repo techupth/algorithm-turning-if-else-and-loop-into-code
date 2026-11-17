@@ -7,13 +7,13 @@
 
 // Start coding here
 
-// กระบวนการ:
+// Operation:
 // - การกำหนดค่า
 // - การบวก/ลบ/คูณ/หาร
 // - การเปรียบเทียบ
 // - If-Else
 // - Loop
-// ขั้นตอน:
+// เรียงลำดับกระบวนการ:
 // 1. Declare ตัว Variable numberOfPositive, numberOfNegative, numberOfZero เพื่อเก็บจำนวนเลขบวก ลบ และศูนย์
 // 2. Loop ผ่านสมาชิกแต่ละตัวใน numbers
 //    <ในการวนแต่ละครั้ง ให้ใช้ If-Else
